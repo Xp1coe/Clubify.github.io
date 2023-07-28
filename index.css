@@ -1,80 +1,18 @@
 body{
-    background: black;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Background1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: sticky;
 }
-.navbar{
-    background: cornflowerblue;
-    border: 1px solid white;
+.card{
+    width: 300px;
+    height: 350px;
 }
-.searchbar{
-    border: 1px solid white;
+.container-sm li{
+    display: inline-block;
+    padding-left: 82px;
+
 }
-.searchbar label{
-    position: relative;
+#header{
     color: white;
-    bottom: 26px;
-    margin-right: 10px;
-}
-.searchbar img{
-    position: relative;
-    width: 100px;
-    height: 40px;
-    margin: 10px;
-    border: 1px solid white;
-}
-.searchbar li{
-    position: relative;
-    display: inline;
-}
-.searchbar input{
-    position: relative;
-    width: 50%;
-    height: 30px;
-    font-size: 15px;
-    bottom: 25px;
-    background: black;
-    border: 1px solid white;
-    border-radius: 25px;
-    color: white;
-}
-.searchbar button{
-    position: relative;
-    background: lightcoral;
-    text-align: center;
-    bottom: 26px;
-    width: 80px;
-    height: 30px;
-    border: 1px solid white;
-    left: 400px;
-}
-.searchbar button:hover{
-    background-color: crimson;
-    cursor: pointer;
-}
-.bottombar{
-    border: 1px  solid white;
-}
-.bottombar li{
-    position: relative;
-    display: inline;
-}
-.bottombar li a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 15px;
-}
-.bottombar li a:hover{
-    background: rgb(0, 96, 199);
-   }
-.carosuel{
-    width: 640px;
-    height: 640px;
-    border: 1px solid;
-    overflow: hidden;
-   }
-.carosuel img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

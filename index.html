@@ -2,41 +2,89 @@
 
 <head>
     <title>Clubify-From Doorstep to Dancefloor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="ico.png">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="searchbar">
-            <ul>
-                <li><img src="ico.png" alt="Clubify"></li>
-                <li><label for="search">Search</label></li>
-                <li><input type="text" id="search"></li>
-                <li><a href="#"><button>Sign In</button></a></li>
-            </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clubify</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Host a Party</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">Explore Nightlife</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Pubs</a>
+                            <a class="dropdown-item" href="#">Events</a>
+                            <a class="dropdown-item" href="#">Bars & Lounges</a>
+                            <a class="dropdown-item" href="#">Live Sports Streaming</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-        <div class="bottombar">
-            <ul>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Pubs</a></li>
-                <li><a href="#">Bars & Lounge</a></li>
-                <li><a href="#">Live Sports Streaming</a></li>
-                <li style="float:right;"><a href="#">Host Party</a></li>
-            </ul>
-        </div>
-    </div>
+    </nav>
     <br>
     <center>
-        <div class="carosuel">
-            <img src="Party1.jpg" alt="image1">
-            <img src="#" alt="image2">
-            <img src="#" alt="image3">
-            <img src="#" alt="image4">
-        </div>
+        <h3 id="header"> Hot This Weekend</h2>
     </center>
-
-    <script src="index.js"></script>
+    <div class="container-sm">
+        <ul>
+            <li>
+                <div class="card" style="background-color:lightskyblue; border-color:darkblue;">
+                    <img class="card-img-top" src="" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Waters</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="background:red; border-color:darkblue;">
+                    <img class="card-img-top" src="" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Dimora Bar & Kitchen</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="background-color:green; border-color:darkblue;">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">House Of Medici</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
 </body>
-
-</html>
