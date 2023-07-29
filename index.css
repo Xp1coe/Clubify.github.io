@@ -21,6 +21,17 @@ body{
 #header{
     color: white;
 }
-footer{
-    background: linear-gradient(rgba(0, 0, 0, 0.715),rgba(0, 0, 0, 0.715));
+#Banner h3{
+text-align: center;
+color: white;
+}
+#Banner{
+background:url(Banner.jfif);
+background-size: cover;
+background-position: center;
+padding: 20px;
+}
+h3{
+    color: white;
+    text-align: center;
 }
